@@ -44,7 +44,7 @@
             border-radius: 10px;
             display: inline-block;
             width: 50%; /* Menor ancho del formulario */
-            max-width: 350px; /* Tamaño máximo reducido */
+            max-width: 350px;
             display: none; /* Formulario inicialmente oculto */
             text-align: left;
             position: fixed;
@@ -54,10 +54,10 @@
             margin-bottom: 50px; /* Separación del borde inferior */
         }
 
-        input, select, button {
+        input, select, button[type="submit"] {
             margin: 10px 0;
             padding: 10px;
-            width: 100%;
+            width: 90%; /* Ancho reducido para coincidir con el fondo */
             border: none;
             border-radius: 5px;
         }
@@ -67,8 +67,8 @@
             color: white; /* Letras blancas */
             cursor: pointer;
             border-radius: 5px;
-            padding: 8px 16px; /* Botón más pequeño */
-            font-size: 14px; /* Fuente más pequeña */
+            padding: 10px 20px; /* Tamaño normal del botón */
+            font-size: 14px;
             border: none;
         }
 
@@ -86,7 +86,7 @@
 
         /* Estilo del botón de contacto */
         #contacto-btn {
-            padding: 8px 16px; /* Botón más pequeño */
+            padding: 10px 20px; /* Tamaño del botón reducido */
             background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con un poco de transparencia */
             color: white; /* Letras blancas */
             border: none;
@@ -96,7 +96,7 @@
             top: 10%; /* Más cerca del borde superior */
             left: 50%;
             transform: translateX(-50%); /* Centrado horizontalmente */
-            font-size: 14px; /* Fuente más pequeña */
+            font-size: 14px;
             z-index: 1; /* Asegura que el botón esté por encima del formulario */
         }
 
