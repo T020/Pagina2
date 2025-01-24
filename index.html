@@ -10,6 +10,7 @@
             padding: 0;
             height: 100%;
             overflow: hidden;
+            font-family: Arial, sans-serif;
         }
 
         /* Contenedor del video */
@@ -46,6 +47,7 @@
             width: 80%;
             max-width: 600px;
             display: none; /* Formulario inicialmente oculto */
+            text-align: left;
         }
 
         input, select, button {
@@ -58,13 +60,17 @@
         }
 
         button {
-            background-color: #4CAF50;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con un poco de transparencia */
+            color: white; /* Letras blancas */
             cursor: pointer;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al pasar el mouse */
         }
 
         /* Estilo de la sección de contenido */
@@ -72,7 +78,6 @@
             position: relative;
             color: white;
             text-align: center;
-            font-family: Arial, sans-serif;
             z-index: 1;
             margin-top: 10%;
         }
@@ -84,8 +89,8 @@
         /* Estilo del botón de contacto */
         #contacto-btn {
             padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con un poco de transparencia */
+            color: white; /* Letras blancas */
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -93,9 +98,17 @@
         }
 
         #contacto-btn:hover {
-            background-color: #45a049;
+            background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al pasar el mouse */
         }
 
+        /* Centrando el formulario */
+        #formulario {
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -107,8 +120,6 @@
     </div>
 
     <div class="content">
-        <h1>Formulario de Contacto</h1>
-
         <!-- Botón de contacto -->
         <button id="contacto-btn" onclick="toggleFormulario()">Contacto</button>
 
@@ -151,4 +162,3 @@
     </script>
 </body>
 </html>
-
