@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video de Fondo</title>
+    <title>Video de Fondo con Formulario</title>
     <style>
         body, html {
             margin: 0;
@@ -36,19 +36,48 @@
             background: black;
         }
 
-        /* Contenido superpuesto */
+        /* Estilo del formulario */
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+        }
+
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo de la sección de contenido */
         .content {
             position: relative;
             color: white;
             text-align: center;
             font-family: Arial, sans-serif;
             z-index: 1;
+            margin-top: 10%;
         }
 
         h1 {
             font-size: 3rem;
-            margin-top: 20%;
         }
+
     </style>
 </head>
 <body>
@@ -60,5 +89,31 @@
     </div>
 
     <div class="content">
-        <h1>¡Bienvenido
+        <h1>Formulario de Contacto</h1>
+        <form action="https://formspree.io/f/mqaeakqr" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br>
+
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required><br>
+
+            <label for="genero">Género:</label><br>
+            <select id="genero" name="genero" required>
+                <option value="">Selecciona una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select><br>
+
+            <label for="fecha">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha" required><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
 
