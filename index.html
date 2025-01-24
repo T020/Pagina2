@@ -64,8 +64,8 @@
             color: white; /* Letras blancas */
             cursor: pointer;
             border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 8px 16px; /* Botón más pequeño */
+            font-size: 14px; /* Fuente más pequeña */
             border: none;
         }
 
@@ -79,7 +79,7 @@
             color: white;
             text-align: center;
             z-index: 1;
-            margin-top: 10%;
+            margin-top: 5%; /* Ajuste para que el contenido esté más arriba */
         }
 
         h1 {
@@ -88,16 +88,17 @@
 
         /* Estilo del botón de contacto */
         #contacto-btn {
-            padding: 10px 20px;
+            padding: 8px 16px; /* Botón más pequeño */
             background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con un poco de transparencia */
             color: white; /* Letras blancas */
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 30px; /* Botón más arriba */
-            font-size: 20px;
-            display: inline-block; /* Alineado con otros elementos */
-            text-transform: uppercase;
+            position: absolute;
+            top: 5%; /* Más cerca del borde superior */
+            left: 50%;
+            transform: translateX(-50%); /* Centrado horizontalmente */
+            font-size: 14px; /* Fuente más pequeña */
         }
 
         #contacto-btn:hover {
@@ -165,4 +166,3 @@
     </script>
 </body>
 </html>
-
